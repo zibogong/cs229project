@@ -21,7 +21,7 @@ def addobject(newroot, name, xmin, ymin, xmax, ymax):
     newxmin.text = str(xmin)
     newymin = ET.SubElement(newbnbbox, 'ymin')
     newymin.text = str(ymin)
-    newxmax =f ET.SubElement(newbnbbox, 'xmax')
+    newxmax = ET.SubElement(newbnbbox, 'xmax')
     newxmax.text = str(xmax)
     newymax = ET.SubElement(newbnbbox, 'ymax')
     newymax.text = str(ymax)
