@@ -20,7 +20,7 @@ def addobject(newroot, name, xmin, ymin, xmax, ymax):
     newxmin.text = str(xmin)
     newymin = ET.SubElement(newbnbbox, 'ymin')
     newymin.text = str(ymin)
-    newxmax = ET.SubElement(newbnbbox, 'xmax')
+    newxmax =f ET.SubElement(newbnbbox, 'xmax')
     newxmax.text = str(xmax)
     newymax = ET.SubElement(newbnbbox, 'ymax')
     newymax.text = str(ymax)
@@ -75,9 +75,9 @@ def generate_xml(xml_path, i, xml_output_path, image_input_path, image_output_pa
                         ymax = y
             addobject(newroot, name, xmin, ymin, xmax, ymax)
             x = x + 1
-    newfuck = ET.ElementTree(newroot)
+    nofuckplease = ET.ElementTree(newroot)
     if x > 0:
-        newfuck.write(xml_output_path + str(i).zfill(6) + '.xml')
+        nofuckplease.write(xml_output_path + str(i).zfill(6) + '.xml')
         shutil.copy(image_path, image_output_path + str(i).zfill(6) + '.jpg')
         return True
     return False
