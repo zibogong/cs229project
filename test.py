@@ -4,6 +4,7 @@ import shutil
 import Image
 '''
 hello
+please comment
 '''
 def addobject(newroot, name, xmin, ymin, xmax, ymax):
     newobj = ET.SubElement(newroot, 'object')
