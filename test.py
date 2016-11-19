@@ -2,7 +2,9 @@ import os.path
 import xml.etree.ElementTree as ET
 import shutil
 import Image
-
+'''
+hello
+'''
 def addobject(newroot, name, xmin, ymin, xmax, ymax):
     newobj = ET.SubElement(newroot, 'object')
     newname = ET.SubElement(newobj, 'name')
